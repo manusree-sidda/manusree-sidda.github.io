@@ -74,6 +74,18 @@ footer{max-width:920px;margin:0 auto;padding:32px 24px;color:var(--mut);font-siz
 <section id="work">
 <p class="tag">Work</p><h2>Selected projects.</h2>
 
+
+<article class="cs" id="analytics">
+<p class="tag">Case study 4 · Personal project, Nov 2026</p><h3>Turning delivery data into decisions</h3>
+<p>I analyzed 99K+ orders from a Brazilian e-commerce marketplace in SQL, then designed a one-page dashboard so a non-technical manager can see where revenue comes from and what hurts customer satisfaction.</p>
+<div class="meta"><div><span>Role</span><p>Analyst and dashboard designer. Solo project.</p></div><div><span>Question</span><p>Where does revenue come from, and what hurts customer satisfaction?</p></div><div><span>Data</span><p>Public Olist dataset: 99K+ orders across 9 related tables, 2016 to 2018.</p></div><div><span>Tools</span><p>PostgreSQL, DBeaver, Power BI</p></div></div>
+<figure><img src="olist-dashboard.png" alt="Power BI dashboard with four KPI cards, a monthly revenue line chart, top 10 categories, late delivery rate by state, review score for late versus on-time orders, and revenue share by customer decile" loading="lazy"><figcaption>Final dashboard: revenue, delivery performance and customer segments on one page</figcaption>
+<ol class="d"><li><b>Headline numbers first</b>Four cards for revenue, delivered orders, late delivery rate and repeat customers sit above every chart.</li><li><b>One question per chart</b>Each title says what the chart answers, such as “Late Delivery % by State.”</li><li><b>Worst first</b>The state chart shows the top 10 and is sorted, so the highest late rates, mostly in Northeast Brazil, are visible without scrolling.</li><li><b>The takeaway on the page</b>A short insights box states three findings in plain language, so no one has to infer them from the charts.</li></ol></figure>
+<div class="grid" style="margin-top:28px"><div class="card"><h3>Late deliveries hurt ratings</h3><p>8% of orders arrive late and average a 2.57 review score, against 4.29 for on-time orders.</p></div><div class="card"><h3>Retention is the opportunity</h3><p>Only 3% of customers buy a second time, and the top 10% of customers drive 38% of revenue.</p></div><div class="card"><h3>Fix the biggest sources first</h3><p>Northeast states have the highest late rates (15 to 23%), and Rio de Janeiro has the most late orders by volume.</p></div></div>
+<p class="note">Findings show association, not causation. Queries, assumptions and recommendations are in <a href="https://github.com/manusree-sidda/olist-ecommerce-sql-analysis" target="_blank" rel="noopener">the GitHub repo</a>.</p>
+</article>
+
+  
 <article class="cs">
 <p class="tag">Case study 1 · Ongoing research</p><h3>Cardiovascular risk dashboards</h3>
 <p>Interactive dashboards that help a surgical research team read a patient’s risk at a glance and compare them with the wider cohort.</p>
