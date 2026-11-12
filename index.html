@@ -73,9 +73,19 @@ footer{max-width:920px;margin:0 auto;padding:32px 24px;color:var(--mut);font-siz
 
 <section id="work">
 <p class="tag">Work</p><h2>Selected projects.</h2>
+
+<article class="cs" id="analytics">
+<p class="tag">Case study 3 · Personal project, Nov 2026</p><h3>Turning delivery data into decisions</h3>
+<p>I analyzed 99K+ orders from a Brazilian e-commerce marketplace in SQL, then designed a one-page dashboard so a non-technical manager can see where revenue comes from and what hurts customer satisfaction.</p>
+<div class="meta"><div><span>Role</span><p>Analyst and dashboard designer. Solo project.</p></div><div><span>Question</span><p>Where does revenue come from, and what hurts customer satisfaction?</p></div><div><span>Data</span><p>Public Olist dataset: 99K+ orders across 9 related tables, 2016 to 2018.</p></div><div><span>Tools</span><p>PostgreSQL, DBeaver, Power BI</p></div></div>
+<figure><img src="olist-dashboard.png" alt="Power BI dashboard with four KPI cards, a monthly revenue line chart, top 10 categories, late delivery rate by state, review score for late versus on-time orders, and revenue share by customer decile" loading="lazy"><figcaption>Final dashboard: revenue, delivery performance and customer segments on one page</figcaption>
+<ol class="d"><li><b>Headline numbers first</b>Four cards for revenue, delivered orders, late delivery rate and repeat customers sit above every chart.</li><li><b>One question per chart</b>Each title says what the chart answers, such as “Late Delivery % by State.”</li><li><b>Worst first</b>The state chart shows the top 10 and is sorted, so the highest late rates, mostly in Northeast Brazil, are visible without scrolling.</li><li><b>The takeaway on the page</b>A short insights box states three findings in plain language, so no one has to infer them from the charts.</li></ol></figure>
+<div class="grid" style="margin-top:28px"><div class="card"><h3>Late deliveries hurt ratings</h3><p>8% of orders arrive late and average a 2.57 review score, against 4.29 for on-time orders.</p></div><div class="card"><h3>Retention is the opportunity</h3><p>Only 3% of customers buy a second time, and the top 10% of customers drive 38% of revenue.</p></div><div class="card"><h3>Fix the biggest sources first</h3><p>Northeast states have the highest late rates (15 to 23%), and Rio de Janeiro has the most late orders by volume.</p></div></div>
+<p class="note">Findings show association, not causation. Queries, assumptions and recommendations are in <a href="https://github.com/manusree-sidda/olist-ecommerce-sql-analysis" target="_blank" rel="noopener">the GitHub repo</a>.</p>
+</article>
   
 <article class="cs">
-<p class="tag">Case study 1 · Ongoing research</p><h3>Cardiovascular risk dashboards</h3>
+<p class="tag">Case study 2 · Ongoing research</p><h3>Cardiovascular risk dashboards</h3>
 <p>Interactive dashboards that help a surgical research team read a patient’s risk at a glance and compare them with the wider cohort.</p>
 <div class="meta"><div><span>Role</span><p>Undergraduate Research Assistant. Built the backend and nearly all of the frontend.</p></div><div><span>Team</span><p>Medical student researchers (clinical specs) and statistics teammates (data pipeline).</p></div><div><span>Timeline</span><p>Sep 2025 to present, Texas A&amp;M AI Dashboards Project</p></div><div><span>Data</span><p>Real hospital data, pediatric cardiac surgery</p></div></div>
 <div class="shots two">
@@ -88,25 +98,15 @@ footer{max-width:920px;margin:0 auto;padding:32px 24px;color:var(--mut);font-siz
 </article>
 
 <article class="cs" id="ai">
-<p class="tag">Case study 1 · In progress</p><h3>Designing trust into AI summaries</h3>
+<p class="tag">Case study 2 · In progress</p><h3>Designing trust into AI summaries</h3>
 <p>Clinicians can’t act on a summary they can’t trust, so I’m building an LLM pipeline that checks every summary before a person sees it, and fails safely when a check fails.</p>
 <div class="flow"><div><b>1. Feature engine</b>Pulls structured patient features.</div><div><b>2. RAG retrieval</b>Finds supporting evidence.</div><div><b>3. LLM draft</b>Writes the summary.</div><div class="k"><b>4. Rule-based verifier</b>Checks the draft against source data.</div><div><b>5. Template fallback</b>Uses a safe template if a check fails.</div></div>
 </article>
 
 <article class="cs">
-<p class="tag">Case study 2 · Electronic Power Design, May to Aug 2026</p><h3>Designing workflows for floor operators</h3>
+<p class="tag">Case study 3 · Electronic Power Design, May to Aug 2026</p><h3>Designing workflows for floor operators</h3>
 <p>As an Industrial Engineering Intern, I redesigned how production work is documented so that operators and engineers share one clear picture.</p>
 <div class="grid" style="margin-top:28px"><div class="card"><h3>Understand</h3><p>Worked with floor operators and engineering leads to find pain points and define specifications for new production workflows.</p></div><div class="card"><h3>Model</h3><p>Ran time studies and built a Python simulation to find scalability bottlenecks and project labor-hour cost reductions.</p></div><div class="card"><h3>Communicate</h3><p>Created process flow maps, SOPs, Work Instructions and Job Breakdown Sheets for the team.</p></div></div>
-</article>
-
-<article class="cs" id="analytics">
-<p class="tag">Case study 3 · Personal project, Nov 2026</p><h3>Turning delivery data into decisions</h3>
-<p>I analyzed 99K+ orders from a Brazilian e-commerce marketplace in SQL, then designed a one-page dashboard so a non-technical manager can see where revenue comes from and what hurts customer satisfaction.</p>
-<div class="meta"><div><span>Role</span><p>Analyst and dashboard designer. Solo project.</p></div><div><span>Question</span><p>Where does revenue come from, and what hurts customer satisfaction?</p></div><div><span>Data</span><p>Public Olist dataset: 99K+ orders across 9 related tables, 2016 to 2018.</p></div><div><span>Tools</span><p>PostgreSQL, DBeaver, Power BI</p></div></div>
-<figure><img src="olist-dashboard.png" alt="Power BI dashboard with four KPI cards, a monthly revenue line chart, top 10 categories, late delivery rate by state, review score for late versus on-time orders, and revenue share by customer decile" loading="lazy"><figcaption>Final dashboard: revenue, delivery performance and customer segments on one page</figcaption>
-<ol class="d"><li><b>Headline numbers first</b>Four cards for revenue, delivered orders, late delivery rate and repeat customers sit above every chart.</li><li><b>One question per chart</b>Each title says what the chart answers, such as “Late Delivery % by State.”</li><li><b>Worst first</b>The state chart shows the top 10 and is sorted, so the highest late rates, mostly in Northeast Brazil, are visible without scrolling.</li><li><b>The takeaway on the page</b>A short insights box states three findings in plain language, so no one has to infer them from the charts.</li></ol></figure>
-<div class="grid" style="margin-top:28px"><div class="card"><h3>Late deliveries hurt ratings</h3><p>8% of orders arrive late and average a 2.57 review score, against 4.29 for on-time orders.</p></div><div class="card"><h3>Retention is the opportunity</h3><p>Only 3% of customers buy a second time, and the top 10% of customers drive 38% of revenue.</p></div><div class="card"><h3>Fix the biggest sources first</h3><p>Northeast states have the highest late rates (15 to 23%), and Rio de Janeiro has the most late orders by volume.</p></div></div>
-<p class="note">Findings show association, not causation. Queries, assumptions and recommendations are in <a href="https://github.com/manusree-sidda/olist-ecommerce-sql-analysis" target="_blank" rel="noopener">the GitHub repo</a>.</p>
 </article>
   
 <article class="cs">
